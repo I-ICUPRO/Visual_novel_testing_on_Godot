@@ -22,11 +22,10 @@
 ### Пример:
 ```gdscript
 if {Keyboard._test} == "где она?":
-  [signal arg="_test_signal"]
   jump timeline1/_next_dialog
 
 else:
-  [signal arg="_not_set"]
   jump timeline1/_next_dialog
 
 label _next_dialog
+```
