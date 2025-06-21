@@ -1,4 +1,4 @@
-[background fade="0.0"]
+[background arg="res://image/street_bg_evening.jpg" fade="0.0"]
 # Используется для возвращения Label
 label start_back
 # Диалог
