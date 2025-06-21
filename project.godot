@@ -25,7 +25,7 @@ directories/dch_directory={
 "unit_test_character": "res://Tests/Resources/unit_test_character.dch"
 }
 directories/dtl_directory={
-"fors": "res://fors.dtl",
+"fors": "res://dialogic/Timeline/fors.dtl",
 "timeline1": "res://dialogic/Timeline/timeline1.dtl"
 }
 layout/style_list=[]

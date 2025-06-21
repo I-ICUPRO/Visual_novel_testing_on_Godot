@@ -7,3 +7,26 @@
 
 Берите, ломайте, улучшайте —  
 я уже забыл, что тут написано.
+
+---
+
+## [!] Dialogic 2: Аномалия с ветвлением if/elif/else
+
+### Проблема:
+После успешного условия (`if` или `elif`) выполнение всё равно продолжается вниз до `else`.
+
+### Решение:
+1. После успешного условия использовать `jump`, чтобы прервать выполнение.
+2. Добавить специальный `label _next_dialog`, чтобы корректно завершать логику.
+
+### Пример:
+```gdscript
+if {Keyboard._test} == "где она?":
+  [signal arg="_test_signal"]
+  jump timeline1/_next_dialog
+
+else:
+  [signal arg="_not_set"]
+  jump timeline1/_next_dialog
+
+label _next_dialog
