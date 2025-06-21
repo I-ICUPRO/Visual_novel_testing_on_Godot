@@ -1,0 +1,7 @@
+# Используется для перехода из другого таймлайна
+label start_history_fors
+# Меняем фон
+[background arg="res://image/old_apartment_dawn.jpg" fade="0.0"]
+# Диалог
+Ты не удешь от сюда.......
+Никогда........
